@@ -1,16 +1,112 @@
 body {
-    font-family: sans-serif;
-    background-color: cyan;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+nav {
+    background-color: #1F1F1F;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    color: red;
+nav ul li {
+    margin: 0 1rem;
 }
 
-a {
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: magenta;
-    margin-right: 10px;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.home-container img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.about-container, .projects-container, .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tabs {
+    overflow: hidden;
+    border-bottom: 1px solid #333;
+}
+
+.tablinks {
+    background-color: #333;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tablinks:hover {
+    background-color: #555;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+#Skills, #Experience {
+    padding-top: 2rem;
+}
+
+.projects-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects-container ul li {
+    margin-bottom: 1rem;
+}
+
+.projects-container a {
+    color: #BB86FC;
+    text-decoration: none;
+}
+
+.projects-container a:hover {
+    text-decoration: underline;
+}
+
+.contact-container a {
+    color: #BB86FC;
+    text-decoration: none;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
 }
